@@ -17,8 +17,14 @@ purple-mint: */
     --pico-font-family: 'roboto', 'arial', 'helvetica';
 }
 
+html {
+    height: 100vh;
+}
+
 body {
-    background: linear-gradient(0.66turn, #1f0c36, #573185);
+    background: -webkit-linear-gradient(0.66turn, #1f0c36, #573185);
+    height: 100%;
+    margin: 0;
 }
 
 h1 {
@@ -37,4 +43,40 @@ h1 {
 main {
     margin-top: 2rem;
     padding: 20px;
+}
+/* Navigation */
+nav {
+    background-color: #1f0c36;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #17f1b3;
+}
+
+nav,
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.nav__images {
+    max-width: 40px;
+}
+
+.filter-green {
+    filter: invert(79%) sepia(99%) saturate(1652%) hue-rotate(82deg)
+        brightness(100%) contrast(89%);
+}
+.filter-pink {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
+}
+ul li a:hover {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
 }
