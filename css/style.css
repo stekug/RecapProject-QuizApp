@@ -18,12 +18,13 @@ purple-mint: */
 }
 
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 body {
     background: -webkit-linear-gradient(0.66turn, #1f0c36, #573185);
     height: 100%;
+    width: 100%;
     margin: 0;
 }
 
