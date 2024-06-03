@@ -1,0 +1,23 @@
+/* color: #17f1b3;
+color: #e8479b; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    outline: 1px solid rgb(167, 102, 42);
+}
+:root {
+    --pico-font-family: 'roboto', 'arial', 'helvetica';
+}
+
+body {
+}
+
+h1 {
+    position: static;
+    text-align: center;
+}
