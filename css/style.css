@@ -18,6 +18,7 @@ purple-mint: */
 }
 
 body {
+    background: linear-gradient(0.66turn, #1f0c36, #573185);
 }
 
 h1 {
@@ -35,4 +36,5 @@ h1 {
 
 main {
     margin-top: 2rem;
+    padding: 20px;
 }
