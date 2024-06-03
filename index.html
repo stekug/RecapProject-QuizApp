@@ -7,6 +7,10 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -22,55 +26,13 @@
             <h1 class="pt-1 pb-3">Quiz App</h1>
         </header>
         <main class="main__content">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis dignissimos recusandae, laudantium magnam officiis
-                doloribus est quis quae vitae, odit voluptatibus nobis
-                temporibus veritatis tempore culpa ipsam. Explicabo, libero
-                doloribus.
-            </p>
+            <div class="question-card">
+                <p class="question-card-question pico-color-grey-50 pa-3">
+                    What is the only food that never spoils?
+                </p>
+                <button class="mt-1 mb-1">Show Answer</button>
+            </div>
+            <div class="button__container"></div>
         </main>
         <nav>
             <ul>
@@ -79,7 +41,7 @@
                         ><img
                             class="nav__images filter-green"
                             src="images/home.png"
-                            alt="This is the Home-Link"
+                            alt="This is the Home-Link Icon"
                     /></a>
                 </li>
                 <li>
@@ -87,7 +49,7 @@
                         ><img
                             class="nav__images filter-green"
                             src="images/bookmark.png"
-                            alt="This is the Bookmark-Link"
+                            alt="This is the Bookmark-Link Icon"
                     /></a>
                 </li>
                 <li>
@@ -95,7 +57,7 @@
                         ><img
                             class="nav__images filter-green"
                             src="images/user.png"
-                            alt="This is the User-Link"
+                            alt="This is the User-Link Icon"
                     /></a>
                 </li>
             </ul>

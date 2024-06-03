@@ -11,7 +11,7 @@ purple-mint: */
 }
 
 /* * {
-    outline: 1px solid rgb(167, 102, 42);
+    outline: 1px solid orange;
 } */
 :root {
     --pico-font-family: 'roboto', 'arial', 'helvetica';
@@ -41,10 +41,34 @@ h1 {
     border-bottom: 2px solid #17f1b3;
 }
 
+/* main content */
 main {
-    margin-top: 2rem;
-    padding: 20px;
+    margin-top: 3rem;
+    padding: 2rem;
+    color: black;
 }
+
+.question-card {
+    background-color: #11061d;
+    border-radius: 0.6rem;
+    font-size: 2rem;
+    /* height: 25rem; */
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.question-card-question {
+    /* border-bottom: 1px solid #17f1b3; */
+}
+
+button {
+    background-color: #17f1b3;
+    border: 0;
+    color: #11061d;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 /* Navigation */
 nav {
     background-color: #1f0c36;
@@ -65,6 +89,10 @@ li {
     margin: 0;
     padding: 0;
 }
+ul li a:hover {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
+}
 .nav__images {
     max-width: 40px;
 }
@@ -74,10 +102,6 @@ li {
         brightness(100%) contrast(89%);
 }
 .filter-pink {
-    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
-        brightness(93%) contrast(96%);
-}
-ul li a:hover {
     filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
         brightness(93%) contrast(96%);
 }
