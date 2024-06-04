@@ -1,0 +1,53 @@
+/* Navigation */
+nav {
+    background-color: #1f0c36;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #17f1b3;
+}
+
+nav,
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__images {
+    max-width: 40px;
+}
+
+.nav__links {
+    filter: invert(79%) sepia(99%) saturate(1652%) hue-rotate(82deg)
+        brightness(100%) contrast(89%);
+}
+
+.nav__links:hover {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
+}
+
+.nav__links:active {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
+}
+
+.nav__links-current {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
+}
+
+.filter-green {
+    filter: invert(79%) sepia(99%) saturate(1652%) hue-rotate(82deg)
+        brightness(100%) contrast(89%);
+}
+.filter-pink {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg)
+        brightness(93%) contrast(96%);
+}
