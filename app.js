@@ -6,6 +6,9 @@ const homeSection = document.querySelector('[data-js="homeSection"]');
 const bookmarkSection = document.querySelector('[data-js="bookmarkSection"]');
 const userSection = document.querySelector('[data-js="userSection"]');
 
+bookmarkSection.classList.add('hide');
+userSection.classList.add('hide');
+
 homeLink.addEventListener('click', () => {
     homeLink.classList.add('nav__links-current');
     bookmarkLink.classList.remove('nav__links-current', 'hide');
