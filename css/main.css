@@ -1,0 +1,4 @@
+@import './globals.css';
+@import './utility.css';
+@import './components/navigation.css';
+@import './components/quizCard.css';
