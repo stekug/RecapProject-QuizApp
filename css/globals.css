@@ -45,3 +45,7 @@ main {
     padding: 2rem;
     color: black;
 }
+
+.hide {
+    display: none;
+}
