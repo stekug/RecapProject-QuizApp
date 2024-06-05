@@ -1,0 +1,56 @@
+/* colors:
+pink: #e8479b
+green: #17f1b3
+purple-dark: #1f0c36 
+purple-mint: */
+
+@import './helper.css';
+@import './navigation.css';
+@import './quizCard.css';
+
+:root {
+    --pico-font-family: 'roboto', 'arial', 'helvetica';
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient(1turn, #1f0c36, #422566);
+    margin: 0;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #1f0c36;
+    text-align: center;
+    color: #17f1b3;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    border-bottom: 2px solid #17f1b3;
+    z-index: 1;
+}
+
+main {
+    margin-top: 3rem;
+    padding: 2rem;
+    color: black;
+}
