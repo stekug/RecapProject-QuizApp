@@ -2,3 +2,8 @@
 @import './utility.css';
 @import './components/navigation.css';
 @import './components/quizCard.css';
+@import './components/user.css';
+
+.hide {
+    display: none;
+}
