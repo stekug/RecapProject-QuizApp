@@ -34,6 +34,21 @@
     opacity: 100%;
 }
 
+.question-card__question {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.question-card__answer {
+    background-color: #17f1b3;
+    color: #11061d;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
 .question-card__tags {
     position: relative;
     text-align: left;
