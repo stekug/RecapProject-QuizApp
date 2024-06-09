@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Recap Project - Quiz App</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="pt-1 pb-3">Quiz App</h1>
+        </header>
+        <main>
+            <section class="main__user-section" data-js="userSection">
+                <div class="user-section__card">
+                    <img
+                        src="images/sk_small.jpg"
+                        alt="Avatar"
+                        class="user-section__avatar"
+                    />
+                    <h2 class="user-section__name">John Wayne</h2>
+                    <h3 class="user-section__heading pt-1">About me</h3>
+                    <p class="user-section__text">
+                        Hi, I´m John Max Wayne! I absolutely love quiz games!
+                        There's something thrilling about testing my knowledge
+                        and learning new things with every question. Whether
+                        it's a fun trivia night with friends or a challenging
+                        solo quiz app, I’m always up for it.
+                    </p>
+                </div>
+                <div class="user-section__settings">
+                    <h3 class="user-section__heading">Light Mode</h3>
+                    <label>
+                        <input name="lightmode" type="checkbox" role="switch" />
+                    </label>
+                </div>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <li>
+                    <a
+                        data-js="home.link"
+                        class="nav__links nav__links-current"
+                        href="#"
+                        ><img
+                            class="nav__images"
+                            src="images/home.png"
+                            alt="This is the Home-Link Icon"
+                    /></a>
+                </li>
+                <li>
+                    <a data-js="bookmark.link" class="nav__links" href="#"
+                        ><img
+                            class="nav__images"
+                            src="images/bookmark.png"
+                            alt="This is the Bookmark-Link Icon"
+                    /></a>
+                </li>
+                <li>
+                    <a data-js="user.link" class="nav__links" href="#"
+                        ><img
+                            class="nav__images"
+                            src="images/user.png"
+                            alt="This is the User-Link Icon"
+                    /></a>
+                </li>
+            </ul>
+        </nav>
+        <script src="app.js"></script>
+    </body>
+</html>
