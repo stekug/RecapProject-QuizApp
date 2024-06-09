@@ -20,21 +20,24 @@
 }
 
 .user-section__name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #422566;
     background-color: #17f1b3;
     align-self: center;
     padding: 0.2rem;
     margin: 0;
     width: 100%;
+    text-align: center;
 }
 .user-section__heading {
-    /* position: absolute; */
-    /* align-self: flex-end; */
+    width: 100%;
 }
 
 .user-section__text {
     max-width: 100%;
-    margin-top: 10rem;
     font-size: 0.9rem;
+}
+
+.user-section__settings {
+    position: relative;
 }
