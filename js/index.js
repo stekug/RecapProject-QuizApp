@@ -26,8 +26,8 @@
 //showAnswer all Button (Refactor)
 const allAnswerButton = document.querySelectorAll('.button__show');
 allAnswerButton.forEach((button) => {
-    button.addEventListener('click', (elem) => {
-        const parentElement = elem.target.parentElement;
+    button.addEventListener('click', (element) => {
+        const parentElement = element.target.parentElement;
         const parentChildElement = parentElement.children[3];
         if (button.innerText === 'Show Answer') {
             button.innerText = 'Hide Answer';
@@ -38,3 +38,23 @@ allAnswerButton.forEach((button) => {
         }
     });
 });
+
+//Bookmark Button Function(Local Storage)
+const allBookMarkButton = document.querySelectorAll('.question-card__bookmark');
+allBookMarkButton.forEach((button) => {
+    button.addEventListener('click', (element) => {
+        const cardId = element.target.parentElement.parentElement.id;
+        let bookmarkArray = localStorage.getItem('bookmarks');
+        // Check, if bookmarkArray has value...
+        if (bookmarkArray === null) {
+            bookmarkArray = [];
+        } else {
+            bookmarkArray = JSON.parse(bookmarkArray);
+        }
+        bookmarkArray.push(cardId);
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarkArray));
+    });
+});
+
+const test = localStorage.getItem('bookmarks');
+console.log(test);
