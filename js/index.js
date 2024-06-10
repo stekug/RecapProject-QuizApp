@@ -51,10 +51,12 @@ allBookMarkButton.forEach((button) => {
         } else {
             bookmarkArray = JSON.parse(bookmarkArray);
         }
-        bookmarkArray.push(cardId);
+        let index = bookmarkArray.indexOf(cardId);
+        if (index !== -1) {
+            bookmarkArray.splice(index, 1);
+        } else {
+            bookmarkArray.push(cardId);
+        }
         localStorage.setItem('bookmarks', JSON.stringify(bookmarkArray));
     });
 });
-
-const test = localStorage.getItem('bookmarks');
-console.log(test);
