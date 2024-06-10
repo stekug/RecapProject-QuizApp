@@ -23,6 +23,15 @@
 //     }
 // });
 
+// Set Bookmark icon to Green when clicked
+const bookmarkButton = document.querySelectorAll('.question-card__bookmark');
+
+bookmarkButton.forEach((button) => {
+    button.addEventListener('click', () => {
+        button.classList.toggle('question-card__bookmark-marked');
+    });
+});
+
 //showAnswer all Button (Refactor)
 const allAnswerButton = document.querySelectorAll('.button__show');
 allAnswerButton.forEach((button) => {
