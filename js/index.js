@@ -2,16 +2,27 @@
 const allAnswerButton = document.querySelectorAll('.button__show');
 const allBookMarkButton = document.querySelectorAll('.question-card__bookmark');
 
-// Proof if Card is bookmarked, when true, Bookmark Icon Green
-// get data from storage and check if Card ID is in storage.
+//Build Local Storage Array
+
+//Bookmark Button Function(Local Storage)
 allBookMarkButton.forEach((button) => {
-    let bookmarkArray = localStorage.getItem('bookmarks');
-    bookmarkArray = JSON.parse(bookmarkArray);
-    if (bookmarkArray.includes(button.parentElement.id)) {
-        button.classList.add('question-card__bookmark-marked');
-    } else {
-        button.classList.remove('question-card__boomark-marked');
-    }
+    button.addEventListener('click', (element) => {
+        const cardId = element.target.parentElement.parentElement.id;
+        let bookmarkArray = localStorage.getItem('bookmarks');
+        // Check, if bookmarkArray has value...
+        if (bookmarkArray === null) {
+            bookmarkArray = [];
+        } else {
+            bookmarkArray = JSON.parse(bookmarkArray);
+        }
+        let index = bookmarkArray.indexOf(cardId);
+        if (index !== -1) {
+            bookmarkArray.splice(index, 1);
+        } else {
+            bookmarkArray.push(cardId);
+        }
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarkArray));
+    });
 });
 
 // Set Bookmark icon to Green when clicked
@@ -36,23 +47,19 @@ allAnswerButton.forEach((button) => {
     });
 });
 
-//Bookmark Button Function(Local Storage)
+// Proof if Card is bookmarked, when true, Bookmark Icon Green
+// get data from storage and check if Card ID is in storage.
 allBookMarkButton.forEach((button) => {
-    button.addEventListener('click', (element) => {
-        const cardId = element.target.parentElement.parentElement.id;
-        let bookmarkArray = localStorage.getItem('bookmarks');
-        // Check, if bookmarkArray has value...
-        if (bookmarkArray === null) {
-            bookmarkArray = [];
-        } else {
-            bookmarkArray = JSON.parse(bookmarkArray);
-        }
-        let index = bookmarkArray.indexOf(cardId);
-        if (index !== -1) {
-            bookmarkArray.splice(index, 1);
-        } else {
-            bookmarkArray.push(cardId);
-        }
-        localStorage.setItem('bookmarks', JSON.stringify(bookmarkArray));
-    });
+    let bookmarkArray = localStorage.getItem('bookmarks');
+    // Check, if bookmarkArray has value...
+    if (bookmarkArray === null) {
+        bookmarkArray = [];
+    } else {
+        bookmarkArray = JSON.parse(bookmarkArray);
+    }
+    if (bookmarkArray.includes(button.parentElement.id)) {
+        button.classList.add('question-card__bookmark-marked');
+    } else {
+        button.classList.remove('question-card__boomark-marked');
+    }
 });
