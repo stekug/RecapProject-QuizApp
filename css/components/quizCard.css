@@ -33,6 +33,10 @@
         brightness(100%) contrast(89%);
     opacity: 100%;
 }
+.question-card__bookmark-marked {
+    filter: invert(69%) sepia(50%) saturate(593%) hue-rotate(110deg)
+        brightness(95%) contrast(113%);
+}
 
 .question-card__question {
     color: white;

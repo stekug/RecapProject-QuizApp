@@ -23,8 +23,30 @@
 //     }
 // });
 
-//showAnswer all Button (Refactor)
+// querySelectors
 const allAnswerButton = document.querySelectorAll('.button__show');
+const allBookMarkButton = document.querySelectorAll('.question-card__bookmark');
+
+// Proof if Card is bookmarked, when true, Bookmark Icon Green
+// get data from storage and check if Card ID is in storage.
+allBookMarkButton.forEach((button) => {
+    let bookmarkArray = localStorage.getItem('bookmarks');
+    bookmarkArray = JSON.parse(bookmarkArray);
+    if (bookmarkArray.includes(button.parentElement.id)) {
+        button.classList.add('question-card__bookmark-marked');
+    } else {
+        button.classList.remove('question-card__boomark-marked');
+    }
+});
+
+// Set Bookmark icon to Green when clicked
+allBookMarkButton.forEach((button) => {
+    button.addEventListener('click', () => {
+        button.classList.toggle('question-card__bookmark-marked');
+    });
+});
+
+//showAnswer all Button (Refactor)
 allAnswerButton.forEach((button) => {
     button.addEventListener('click', (element) => {
         const parentElement = element.target.parentElement;
@@ -40,7 +62,6 @@ allAnswerButton.forEach((button) => {
 });
 
 //Bookmark Button Function(Local Storage)
-const allBookMarkButton = document.querySelectorAll('.question-card__bookmark');
 allBookMarkButton.forEach((button) => {
     button.addEventListener('click', (element) => {
         const cardId = element.target.parentElement.parentElement.id;
