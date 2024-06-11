@@ -1,28 +1,3 @@
-// // Bookmark and Link Section
-
-// const homeLink = document.querySelector('[data-js="home.link"]');
-// const bookmarkLink = document.querySelector('[data-js="bookmark.link"]');
-// const userLink = document.querySelector('[data-js="user.link"]');
-// const homeSection = document.querySelector('[data-js="homeSection"]');
-// const bookmarkSection = document.querySelector('[data-js="bookmarkSection"]');
-// const userSection = document.querySelector('[data-js="userSection"]');
-
-//showAnswer Section
-// const showAnswerButton1 = document.querySelector(
-//     '[data-js="showAnswerButton1"]'
-// );
-// const hiddenAnswer1 = document.querySelector('[data-js="answerQ01"]');
-
-// showAnswerButton1.addEventListener('click', () => {
-//     if (showAnswerButton1.innerText === 'Show Answer') {
-//         showAnswerButton1.innerText = 'Hide Answer';
-//         hiddenAnswer1.classList.toggle('hidden');
-//     } else {
-//         showAnswerButton1.innerText = 'Show Answer';
-//         hiddenAnswer1.classList.toggle('hidden');
-//     }
-// });
-
 // querySelectors
 const allAnswerButton = document.querySelectorAll('.button__show');
 const allBookMarkButton = document.querySelectorAll('.question-card__bookmark');
