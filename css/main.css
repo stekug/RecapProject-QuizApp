@@ -4,6 +4,6 @@
 @import './components/quizCard.css';
 @import './components/user.css';
 
-.hide {
+.hidden {
     display: none;
 }
