@@ -25,7 +25,34 @@
             <h1 class="pt-1 pb-3">Quiz App</h1>
         </header>
         <main>
-            <section class="main__home-section" data-js="homeSection"></section>
+            <section class="main__form-section" data-js="homeSection">
+                <form class="form">
+                    <label for="input-question">Type your Question here:</label>
+                    <textarea
+                        class="form__textarea"
+                        name="question"
+                        id="input-question"
+                        rows="5"
+                        required
+                    ></textarea>
+                    <label for="input-answer">Type your Answer here:</label>
+                    <textarea
+                        class="form__textarea"
+                        name="answer"
+                        id="input-answer"
+                        required
+                    ></textarea>
+                    <label for="input-tag">Tag:</label>
+                    <input
+                        class="form__textarea"
+                        type="text"
+                        name="tag"
+                        id="input-tag"
+                        required
+                    />
+                    <button class="button__show">Submit the Question</button>
+                </form>
+            </section>
         </main>
         <nav>
             <ul>

@@ -51,3 +51,12 @@ main {
     gap: 1.25rem 1.25rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+/* Form */
+.form {
+    font-size: 1.75rem;
+}
+
+.form__textarea {
+    font-size: 1.5rem;
+}
