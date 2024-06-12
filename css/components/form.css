@@ -53,3 +53,24 @@
 .form__counter-num {
     color: #17d8f1;
 }
+
+.main__form-modal {
+    font-size: 1.5rem;
+}
+
+.form__modal-button {
+    background: -webkit-linear-gradient(1turn, #17f1b3, #17d8f1);
+    border: 0;
+    color: #11061d;
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-width: 10rem;
+    width: 100%;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+.form__modal-button:hover {
+    background: -webkit-linear-gradient(1turn, #e8479b, #d440da);
+    color: white;
+}
