@@ -11,7 +11,7 @@ nav,
 ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 4rem;
+    gap: 3rem;
 }
 ul,
 li {
