@@ -27,30 +27,58 @@
         <main>
             <section class="main__form-section" data-js="homeSection">
                 <form class="form">
-                    <label for="input-question">Type your Question here:</label>
+                    <label class="form-label" for="input-question"
+                        >Type your Question here:</label
+                    >
                     <textarea
                         class="form__textarea"
                         name="question"
                         id="input-question"
-                        rows="5"
+                        rows="3"
                         required
+                        placeholder="How many hearts does an octopus have?"
+                        maxlength="150"
                     ></textarea>
-                    <label for="input-answer">Type your Answer here:</label>
+                    <p class="form__counter-text">
+                        Characters left:
+                        <span
+                            class="form__counter-num"
+                            data-js="form-counter-num"
+                            >150</span
+                        >
+                    </p>
+                    <label class="form-label" for="input-answer"
+                        >Type your Answer here:</label
+                    >
                     <textarea
                         class="form__textarea"
                         name="answer"
                         id="input-answer"
                         required
+                        placeholder="Three"
+                        maxlength="50"
                     ></textarea>
-                    <label for="input-tag">Tag:</label>
+                    <p class="form__counter-text">
+                        Characters left:
+                        <span
+                            class="form__counter-num"
+                            data-js="form-counter-num"
+                            >50</span
+                        >
+                    </p>
+                    <label class="form-label" for="input-tag">Tag:</label>
                     <input
                         class="form__textarea"
                         type="text"
                         name="tag"
                         id="input-tag"
                         required
+                        placeholder="#curiosities"
+                        maxlength="25"
                     />
-                    <button class="button__show">Submit the Question</button>
+                    <button class="form__button mt-2">
+                        Submit the Question
+                    </button>
                 </form>
             </section>
         </main>
@@ -99,6 +127,6 @@
                 </li>
             </ul>
         </nav>
-        <script src="./js/index.js"></script>
+        <script src="./js/form.js"></script>
     </body>
 </html>
