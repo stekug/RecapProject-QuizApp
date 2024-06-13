@@ -3,6 +3,7 @@
 @import './components/navigation.css';
 @import './components/quizCard.css';
 @import './components/user.css';
+@import './components/form.css';
 
 .hidden {
     display: none;
