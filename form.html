@@ -19,7 +19,7 @@
             <h1 class="pt-1 pb-3">Quiz App</h1>
         </header>
         <main>
-            <section class="main__form-section" data-js="homeSection">
+            <section class="main__home-section" data-js="homeSection">
                 <dialog class="main__form-modal">
                     <article>
                         <header>
@@ -32,7 +32,7 @@
                         <button class="form__modal-button">Close</button>
                     </article>
                 </dialog>
-                <form class="form">
+                <form class="form" data-js="form-question">
                     <label class="form-label" for="input-question">Type your Question here:</label>
                     <textarea
                         class="form__textarea"
@@ -72,7 +72,8 @@
                         placeholder="#curiosities"
                         maxlength="25"
                     />
-                    <button class="form__button mt-2">Submit the Question</button>
+
+                    <button class="form__button mt-2" data-js="form-submit-button">Submit the Question</button>
                 </form>
             </section>
         </main>
