@@ -4,6 +4,8 @@ const answerCounter = document.querySelector('[data-js="form-answer-counter"]');
 const answerTextField = document.querySelector('[data-js="form-answer-textfield"]');
 const homeSection = document.querySelector('[data-js="homeSection"]');
 const allAnswerButton = document.querySelectorAll('.button__show');
+const formModal = document.querySelector('[data-js="form-modal"]');
+const formModalButton = document.querySelector('[data-js="form-modal-button"]');
 
 // Function to update the Counter:
 function updateCharacterCount(textField, counter) {
@@ -48,6 +50,7 @@ form.addEventListener('submit', (event) => {
 
     // append Card to div
     homeSection.append(newQuizCard);
+    openModal();
 });
 
 // Event Delegation for Show Answer buttons
@@ -64,4 +67,17 @@ homeSection.addEventListener('click', (event) => {
             parentChildElement.classList.toggle('hidden');
         }
     }
+});
+
+// Function for Calling the Modal
+function openModal() {
+    formModal.setAttribute('open', '');
+}
+// Function for Closing the Modal
+function closeModal() {
+    formModal.removeAttribute('open');
+}
+// Event Listener for Modal Button
+formModalButton.addEventListener('click', () => {
+    closeModal();
 });
