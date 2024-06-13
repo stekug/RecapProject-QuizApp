@@ -5,7 +5,9 @@ const answerTextField = document.querySelector('[data-js="form-answer-textfield"
 const homeSection = document.querySelector('[data-js="homeSection"]');
 const allAnswerButton = document.querySelectorAll('.button__show');
 const formModal = document.querySelector('[data-js="form-modal"]');
-const formModalButton = document.querySelector('[data-js="form-modal-button"]');
+const formModalButton = document.querySelectorAll('[data-js="form-modal-button"]');
+const questionSubmit = document.querySelector('[data-js="form-submit-button"]');
+const form = document.querySelector('[data-js="form-question"]');
 
 // Function to update the Counter:
 function updateCharacterCount(textField, counter) {
@@ -21,9 +23,6 @@ answerTextField.addEventListener('input', () => {
 });
 
 // Submit Question
-const questionSubmit = document.querySelector('[data-js="form-submit-button"]');
-const form = document.querySelector('[data-js="form-question"]');
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     // get Data
@@ -69,15 +68,17 @@ homeSection.addEventListener('click', (event) => {
     }
 });
 
-// Function for Calling the Modal
+// Function for Open the Modal
 function openModal() {
     formModal.setAttribute('open', '');
 }
-// Function for Closing the Modal
+// Function for Close the Modal
 function closeModal() {
     formModal.removeAttribute('open');
 }
-// Event Listener for Modal Button
-formModalButton.addEventListener('click', () => {
-    closeModal();
+// Event Listener for Modal Buttons
+formModalButton.forEach((button) => {
+    button.addEventListener('click', () => {
+        closeModal();
+    });
 });
