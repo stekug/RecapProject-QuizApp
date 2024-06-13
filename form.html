@@ -3,14 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
-        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -34,17 +28,12 @@
                                 <strong>Thank You for your Question!</strong>
                             </p>
                         </header>
-                        <p>
-                            We are happy that you help us, making our app better
-                            and better!
-                        </p>
+                        <p>We are happy that you help us, making our app better and better!</p>
                         <button class="form__modal-button">Close</button>
                     </article>
                 </dialog>
                 <form class="form">
-                    <label class="form-label" for="input-question"
-                        >Type your Question here:</label
-                    >
+                    <label class="form-label" for="input-question">Type your Question here:</label>
                     <textarea
                         class="form__textarea"
                         name="question"
@@ -53,18 +42,13 @@
                         required
                         placeholder="How many hearts does an octopus have?"
                         maxlength="150"
+                        data-js="form-question-textfield"
                     ></textarea>
                     <p class="form__counter-text">
                         Characters left:
-                        <span
-                            class="form__counter-num"
-                            data-js="form-counter-num"
-                            >150</span
-                        >
+                        <span class="form__counter-num" data-js="form-question-counter">150</span>
                     </p>
-                    <label class="form-label" for="input-answer"
-                        >Type your Answer here:</label
-                    >
+                    <label class="form-label" for="input-answer">Type your Answer here:</label>
                     <textarea
                         class="form__textarea"
                         name="answer"
@@ -72,14 +56,11 @@
                         required
                         placeholder="Three"
                         maxlength="50"
+                        data-js="form-answer-textfield"
                     ></textarea>
                     <p class="form__counter-text">
                         Characters left:
-                        <span
-                            class="form__counter-num"
-                            data-js="form-counter-num"
-                            >50</span
-                        >
+                        <span class="form__counter-num" data-js="form-answer-counter">50</span>
                     </p>
                     <label class="form-label" for="input-tag">Tag:</label>
                     <input
@@ -91,53 +72,30 @@
                         placeholder="#curiosities"
                         maxlength="25"
                     />
-                    <button class="form__button mt-2">
-                        Submit the Question
-                    </button>
+                    <button class="form__button mt-2">Submit the Question</button>
                 </form>
             </section>
         </main>
         <nav>
             <ul>
                 <li>
-                    <a
-                        data-js="home.link"
-                        class="nav__links nav__links"
-                        href="index.html"
-                        ><img
-                            class="nav__images"
-                            src="images/home.png"
-                            alt="This is the Home-Link Icon"
+                    <a data-js="home.link" class="nav__links nav__links" href="index.html"
+                        ><img class="nav__images" src="images/home.png" alt="This is the Home-Link Icon"
                     /></a>
                 </li>
                 <li>
-                    <a
-                        data-js="bookmark.link"
-                        class="nav__links"
-                        href="bookmark.html"
-                        ><img
-                            class="nav__images"
-                            src="images/bookmark.png"
-                            alt="This is the Bookmark-Link Icon"
+                    <a data-js="bookmark.link" class="nav__links" href="bookmark.html"
+                        ><img class="nav__images" src="images/bookmark.png" alt="This is the Bookmark-Link Icon"
                     /></a>
                 </li>
                 <li>
-                    <a
-                        data-js="form.link"
-                        class="nav__links-current"
-                        href="form.html"
-                        ><img
-                            class="nav__images"
-                            src="images/plus.png"
-                            alt="This is the Form-Link Icon"
+                    <a data-js="form.link" class="nav__links-current" href="form.html"
+                        ><img class="nav__images" src="images/plus.png" alt="This is the Form-Link Icon"
                     /></a>
                 </li>
                 <li>
                     <a data-js="user.link" class="nav__links" href="user.html"
-                        ><img
-                            class="nav__images"
-                            src="images/user.png"
-                            alt="This is the User-Link Icon"
+                        ><img class="nav__images" src="images/user.png" alt="This is the User-Link Icon"
                     /></a>
                 </li>
             </ul>
