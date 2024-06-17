@@ -1,0 +1,67 @@
+body {
+    background: -webkit-linear-gradient(1turn, #f5f5f5, #f8f8f8);
+}
+
+h1 {
+    background-color: #f8f8f8;
+    color: #1f0c36;
+    border-bottom: 2px solid #1f0c36;
+}
+
+nav {
+    background-color: #f8f8f8;
+    border-top: 2px solid #1f0c36;
+}
+
+.nav__links {
+    filter: invert(6%) sepia(36%) saturate(5837%) hue-rotate(259deg) brightness(45%) contrast(99%);
+}
+.nav__links:hover {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg) brightness(93%) contrast(96%);
+}
+.nav__links-current {
+    filter: invert(42%) sepia(93%) saturate(1840%) hue-rotate(302deg) brightness(93%) contrast(96%);
+}
+
+.question-card {
+    background-color: #ffffff;
+    border: 2px solid #1f0c36;
+}
+
+.question-card__question {
+    color: #1f0c36;
+}
+
+.question-card__bookmark {
+    filter: invert(4%) sepia(63%) saturate(6729%) hue-rotate(220deg) brightness(90%) contrast(108%);
+}
+.question-card__bookmark-marked {
+    filter: invert(69%) sepia(50%) saturate(593%) hue-rotate(110deg) brightness(95%) contrast(113%);
+}
+
+.user-section__card,
+.user-section__heading,
+.user-section__text {
+    color: #1f0c36;
+}
+.form-label {
+    color: #1f0c36;
+}
+.form__textarea {
+    background-color: #ffffff;
+    border: 1px solid #1f0c36;
+    color: #1f0c36;
+}
+.form__textarea::placeholder {
+    color: #9f7ec9;
+}
+.form__counter-num {
+    color: #9f7ec9;
+}
+.form__counter-text {
+    color: #1f0c36;
+}
+
+.main__form-modal {
+    background-color: #b4b4b4;
+}

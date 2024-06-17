@@ -4,6 +4,7 @@
 @import './components/quizCard.css';
 @import './components/user.css';
 @import './components/form.css';
+/* @import './components/lightmode.css'; */
 
 .hidden {
     display: none;
